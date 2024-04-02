@@ -6,3 +6,22 @@
     <h1 class="display-4">Welcome</h1>
     <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
 </div>
+                                       
+
+<div style="border: #1a1e21 1px">          
+    <h2>Just react app</h2>
+    <div id="root"></div>
+             @section Scripts {
+                 <script src="~/reactapp/static/js/main.custom.js"></script>
+             }
+</div>
+
+<div style="border: #1a1e21 1px">
+    <h2>React App (HTML) in frame</h2>     
+    <iframe title="myFrame" style="border: 0;overflow: hidden" scrolling='omit' src="~/reactapp/index.html" width="100%"></iframe>
+</div>                                
+
+<div style="border: #1a1e21 1px">
+    <h2>React App (server address) in frame</h2>     
+    <iframe title="myFrame" style="border: 0; overflow: hidden !important" src="http://localhost:3000/" width="100%"></iframe>
+</div>   

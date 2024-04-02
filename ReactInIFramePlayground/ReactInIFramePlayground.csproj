@@ -13,4 +13,9 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Client\react-app\build\asset-manifest.json" />
+      <_ContentIncludedByDefault Remove="Client\react-app\build\manifest.json" />
+    </ItemGroup>
+
 </Project>
