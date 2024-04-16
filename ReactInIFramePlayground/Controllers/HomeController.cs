@@ -13,8 +13,9 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult Index(string lang)
     {
+        ViewData["lang"] = lang;
         return View();
     }
 

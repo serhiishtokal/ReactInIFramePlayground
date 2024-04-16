@@ -1,5 +1,6 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var lang = ViewData["lang"] as string;
 }
 
 <div class="text-center">
@@ -18,10 +19,10 @@
 
 <div style="border: #1a1e21 1px">
     <h2>React App (HTML) in frame</h2>     
-    <iframe title="myFrame" scrolling="no" src="~/reactapp/index.html" width="100%"></iframe>
+    <iframe title="myFrame" src="~/reactapp/index.html" width="100%"></iframe>
 </div>                                
 
 <div style="border: #1a1e21 1px">
     <h2>React App (server address) in frame</h2>     
-    <iframe title="myFrame2" scrolling="no" src="http://localhost:3000/" width="100%"></iframe>
+    <iframe title="myFrame2" src="http://localhost:3000?lang=@lang" width="100%"></iframe>
 </div>   
